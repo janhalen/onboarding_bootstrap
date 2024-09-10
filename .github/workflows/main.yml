@@ -1,8 +1,8 @@
 name: Bootstrap issues
-on: ["create"]
-if: github.event.ref == github.event.master_branch
+on:
+  create:
 permissions:
-    issues: write 
+  issues: write 
 jobs:
   create-issues:
     runs-on: ubuntu-latest
